@@ -1,4 +1,4 @@
-                                                    Pattern Sense: Classifying Fabric Using Deep Learning
+                                                                          ###Pattern Sense: Classifying Fabric Using Deep Learning
 
 **Pattern Sense** is a deep learning-based web application that classifies fabric patterns from images. The system uses a Convolutional Neural Network (CNN) and provides an easy-to-use interface where users can upload fabric images and get instant pattern classification results.
 
@@ -58,7 +58,7 @@ The model classifies images into the following 10 categories:
 
 ## 🧑‍💻 Roles and Contributions
 
-- **Deepika Ramalakshmi** (Team Lead):  
+- **Deepika Rama lakshmi** (Team Lead):  
   Model design, Flask integration, and final demo  
 - **Nissy**:  
   Dataset collection and preprocessing  
