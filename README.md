@@ -1,37 +1,40 @@
-                                                                          ###Pattern Sense: Classifying Fabric Using Deep Learning
-
-**Pattern Sense** is a deep learning-based web application that classifies fabric patterns from images. The system uses a Convolutional Neural Network (CNN) and provides an easy-to-use interface where users can upload fabric images and get instant pattern classification results.
+<h1 align="center">🧵 Pattern Sense: Classifying Fabric Using Deep Learning</h1>
 
 ---
 
-## 📌 Project Objective
-
-The goal of this project is to automate the identification of various fabric patterns such as Floral, Polka, Striped, etc., using deep learning techniques. This helps reduce manual effort in fabric sorting and enhances efficiency in textile and fashion-related industries.
+**Pattern Sense** is a deep learning-based web application that classifies fabric patterns from uploaded images. It uses a Convolutional Neural Network (CNN) trained on a dataset of fabric images to predict one of 10 predefined pattern categories. This project demonstrates how artificial intelligence can assist industries like textiles, fashion, and e-commerce in automating visual recognition tasks.
 
 ---
 
-## 🛠️ Tech Stack
+# 📌 Project Objective
+
+To build a system that can identify fabric patterns using image classification. The goal is to automate manual textile sorting and support businesses in organizing and tagging fabric types efficiently.
+
+---
+
+# 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS  
-- **Backend**: Python (Flask)  
-- **Deep Learning**: TensorFlow, Keras  
-- **Image Processing**: NumPy, Keras Preprocessing  
-- **Deployment**: Runs locally on Flask server
+- **Backend**: Python using Flask  
+- **Deep Learning**: TensorFlow and Keras (CNN)  
+- **Image Handling**: Keras Preprocessing, NumPy  
+- **Interface**: Runs locally on a Flask server
 
 ---
 
-## 🧠 Key Features
+# 🧠 Key Features
 
-- User-friendly web interface for uploading fabric images  
-- Automatic classification into 10 fabric pattern categories  
-- Real-time prediction display with uploaded image preview  
-- Offline/local setup without any internet dependency
+- Simple web interface to upload fabric images  
+- Automated prediction using a trained CNN model  
+- Supports 10 distinct fabric pattern categories  
+- Displays predicted result along with the uploaded image  
+- Lightweight and works offline on localhost
 
 ---
 
-## 🧵 Fabric Pattern Categories
+# 🧵 Fabric Pattern Categories
 
-The model classifies images into the following 10 categories:
+The model can recognize the following fabric patterns:
 
 - Chevron  
 - Dots  
@@ -46,78 +49,84 @@ The model classifies images into the following 10 categories:
 
 ---
 
-## 🔄 Workflow
+# 🔄 Workflow
 
-1. User uploads a fabric image through the web interface.  
-2. The image is resized and preprocessed to match model input format.  
-3. The image is passed through a pre-trained CNN model.  
-4. The model predicts the most likely fabric pattern.  
-5. The predicted result and uploaded image are displayed on the result page.
-
----
-
-## 🧑‍💻 Roles and Contributions
-
-- **Deepika Rama lakshmi** (Team Lead):  
-  Model design, Flask integration, and final demo  
-- **Nissy**:  
-  Dataset collection and preprocessing  
-- **Ramdevu Vijay**:  
-  Frontend design (HTML/CSS), testing, and debugging  
-- **Jagadeswari**:  
-  Documentation and presentation
+1. User uploads a fabric image through the web interface  
+2. Image is resized and normalized to match model input  
+3. The trained CNN model processes the image  
+4. The model returns the most probable pattern class  
+5. The result is shown on the screen with the uploaded image preview
 
 ---
 
-## 🗂️ Project Structure
+# 👥 Roles and Contributions
 
-- `app.py`: Flask application file  
-- `model_cnn.h5`: Trained CNN model weights  
-- `templates/`: HTML files (`home.html`, `result.html`)  
-- `static/`: CSS styles and uploaded images  
-- `README.md`: Project documentation
+- **Deepika Rama Lakshmi** – Team Lead  
+  - Designed the CNN model  
+  - Integrated the model with Flask backend  
+  - Coordinated project tasks and handled deployment
 
----
+- **Nissy**  
+  - Collected and labeled dataset  
+  - Performed preprocessing of images
 
-## 🚀 How to Run the Project
+- **Ramdevu Vijay**  
+  - Developed the frontend interface using HTML & CSS  
+  - Conducted testing and resolved integration issues
 
-1. Install Python dependencies (Flask, TensorFlow, NumPy)  
-2. Place the `model_cnn.h5` file in the root directory  
-3. Run the Flask app using `python app.py`  
-4. Open your browser and navigate to `http://localhost:5000`  
-5. Upload a fabric image and view the predicted pattern
-
----
-
-## 📈 Results
-
-- The model successfully classifies fabric patterns with high accuracy on the custom dataset  
-- The web app is responsive and provides results within seconds of image upload  
-- Useful in contexts like e-commerce platforms, textile classification, and fabric management tools
+- **Jagadeswari**  
+  - Handled documentation, reports, and presentations
 
 ---
 
-## 🔮 Future Scope
+# 📁 Project Structure
 
-- Add more pattern categories and expand the dataset  
-- Deploy the app online for global access  
-- Improve model accuracy using advanced architectures (e.g., transfer learning)  
-- Add camera-based live fabric detection
-
----
-
-##  Conclusion
-
-Pattern Sense demonstrates how deep learning, especially CNNs, can be used in the real world to automate visual classification tasks. This project showcases the integration of AI with web technologies to create a functional and interactive solution for fabric pattern recognition.
+- **app.py**: Flask backend logic  
+- **model_cnn.h5**: Trained CNN model file  
+- **templates/**: Contains `home.html` and `result.html` for UI  
+- **static/**: Includes styles and uploaded images  
+- **README.md**: Documentation file
 
 ---
 
-## 👩‍🎓 Developed By
+# 🚀 How to Run the Project
 
-Final Year B.Tech Students  
-Ideal Institute of Technology
+1. Install Python and required packages: Flask, TensorFlow, NumPy  
+2. Clone or download the project folder  
+3. Ensure the trained model file (`model_cnn.h5`) is present  
+4. Run the Flask server  
+5. Open `http://localhost:5000` in your browser  
+6. Upload a fabric image to see the predicted pattern
 
-- Deepika Rama lakshmi (Team Lead)  
+---
+
+# 📈 Results
+
+- Successfully classifies fabric images into correct categories  
+- Provides near-instant feedback via a web interface  
+- Useful for offline, educational, and experimental use cases
+
+---
+
+# 🔮 Future Scope
+
+- Expand dataset to include more complex and blended patterns  
+- Deploy the app online for public use  
+- Enhance the model using transfer learning (e.g., ResNet, MobileNet)  
+- Add drag-and-drop upload and live camera input support
+
+---
+
+# 📘 Conclusion
+
+Pattern Sense shows how deep learning models can be applied in practical scenarios such as textile pattern recognition. This project merges AI and web technologies to offer a simple, intelligent solution for real-world pattern classification problems.
+
+---
+
+# 👩‍💻 Developed By
+
+**Team Members:**  
+- Deepika Rama Lakshmi (Team Lead)  
 - Nissy  
 - Ramdevu Vijay  
 - Jagadeswari
